@@ -1,8 +1,6 @@
-import React from 'react';
 
-import { Button } from './Button';
+import { Button } from 'harmony-ui';
 import './header.css';
-
 type User = {
   name: string;
 };

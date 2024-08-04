@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 import { Button } from 'harmony-ui';
+// @ts-expect-error - required for ts
+import CustomSource from './Custom.stories?raw';
+import { Custom } from './Custom.stories';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -50,5 +53,13 @@ export const Small: Story = {
     label: 'Button',
   },
 };
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(Custom as any).parameters = {
+  docs: {
+    source: {
+      code: CustomSource,
+    },
+  },
+};
 
-export {Custom} from './Custom.stories'
+export {Custom};

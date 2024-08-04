@@ -10,5 +10,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "storybook/default-exports": "off",
   },
 }

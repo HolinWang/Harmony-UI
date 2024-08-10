@@ -4,7 +4,7 @@
  * @returns 
  */
 
-import { Theme } from "harmony-ui";
+import { Theme,webLightTheme } from "harmony-ui";
 import React from "react";
 import { useStyles } from "./useStyles.styles";
 
@@ -15,9 +15,14 @@ const ThemeContext = React.createContext<ThemeContextValue>(undefined);
 export type HarmonyProviderProps = React.HTMLAttributes<
   React.ChildContextProvider<ThemeContextValue>
 > & {
-  theme: ThemeContextValue;
+  theme?: ThemeContextValue;
 };
-export const HarmonyProvider = ({className,theme,children,...restProps}:HarmonyProviderProps) => {
+export const HarmonyProvider = ({
+  className,
+  theme = webLightTheme,
+  children,
+  ...restProps
+}:HarmonyProviderProps) => {
   const cls = useStyles({className,theme})
   return <ThemeContext.Provider value={theme} {...restProps}>
     <div className={cls}>

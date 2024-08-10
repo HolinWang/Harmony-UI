@@ -2,8 +2,8 @@ import { makeStyles, mergeClasses } from "@griffel/react";
 import { HarmonyProviderProps, tokens } from "harmony-ui";
 import { useThemeStyleTag } from "./useThemeStyleTag";
 
-const fishProviderClassNames = {
-  root: "fish-ui-FishProvider",
+const harmonyProviderClassNames = {
+  root: "harmony-ui-harmonyProvider",
 };
 
 const useBaseStyles = makeStyles({
@@ -19,7 +19,7 @@ export const useStyles = ({ className, theme }: Partial<HarmonyProviderProps>) =
   // 根据theme创建cssrules
   const { themeClassName } = useThemeStyleTag({ theme });
   return mergeClasses(
-    fishProviderClassNames.root,
+    harmonyProviderClassNames.root,
     themeClassName,
     baseStyles.root,
     className

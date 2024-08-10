@@ -1,8 +1,6 @@
 import type { PartialTheme } from "harmony-ui";
 import { createCSSRuleFromTheme } from "../createCSSRuleFromTheme";
 
-import { describe, it, expect } from "vitest";
-
 describe("createCSSRuleFromTheme", () => {
   it("handles undefined theme", () => {
     expect(

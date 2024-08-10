@@ -9,4 +9,7 @@ export default defineConfig({
       "harmony-ui": path.resolve(__dirname, "./src/index.ts"),
     },
   },
+  test:{
+    global:true
+  }
 })

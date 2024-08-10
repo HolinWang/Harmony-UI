@@ -11,7 +11,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "sk": "pnpm run storybook",
-    "sk-docs": "storybook dev --docs"
+    "sk-docs": "storybook dev --docs",
+    "test":"vitest"
   },
   "dependencies": {
     "@griffel/react": "^1.5.25",
@@ -39,6 +40,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.2.7",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vitest": "^2.0.5"
   }
 }

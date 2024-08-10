@@ -3,9 +3,9 @@ import { HarmonyProvider } from "harmony-ui";
 import { Default } from "./Default.stories";
 // @ts-expect-error - required for ts
 import DefaultSource from "./Default.stories?raw";
-import { Nested } from "./nested.stories";
+import { Nested } from "./Nested.stories";
 // @ts-expect-error - required for ts
-import NestedSource from "./nested.stories?raw";
+import NestedSource from "./Nested.stories?raw";
 const meta = {
   title: "组件/HarmonyProvider",
   component: HarmonyProvider,

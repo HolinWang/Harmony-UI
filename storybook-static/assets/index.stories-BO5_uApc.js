@@ -1,4 +1,4 @@
-import{m as t,c as n,w as m,t as l,d as c,a as h,b as x,e as s}from"./HarmonyProvider-UH-hN0kN.js";import{j as e}from"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const v=t({provider:{border:"1px",borderRadius:"5px",padding:"5px"},text:{backgroundColor:s.colorBrandBackground2,color:s.colorBrandForeground2,fontSize:"20px",border:"1px",borderRadius:"5px",padding:"5px"}}),d=()=>{const r=v();return e.jsxs(e.Fragment,{children:[e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:m,children:e.jsx("div",{className:r.text,children:"Web Light Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:l,children:e.jsx("div",{className:r.text,children:"Teams Light Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:c,children:e.jsx("div",{className:r.text,children:"webDarkTheme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:h,children:e.jsx("div",{className:r.text,children:"Teams Dark Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:x,children:e.jsx("div",{className:r.text,children:"teamsHighContrastTheme"})})})]})};d.__docgenInfo={description:"",methods:[],displayName:"Default"};const p=`import { makeStyles } from "@griffel/react";
+import{m as t,c as n,w as m,t as l,d as c,a as h,b as x,e as s}from"./HarmonyProvider-UH-hN0kN.js";import{j as e}from"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const v=t({provider:{border:"1px",borderRadius:"5px",padding:"5px"},text:{backgroundColor:s.colorBrandBackground2,color:s.colorBrandForeground2,fontSize:"20px",border:"1px",borderRadius:"5px",padding:"5px"}}),a=()=>{const r=v();return e.jsxs(e.Fragment,{children:[e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:m,children:e.jsx("div",{className:r.text,children:"Web Light Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:l,children:e.jsx("div",{className:r.text,children:"Teams Light Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:c,children:e.jsx("div",{className:r.text,children:"webDarkTheme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:h,children:e.jsx("div",{className:r.text,children:"Teams Dark Theme"})})}),e.jsx("div",{children:e.jsx(n,{className:r.provider,theme:x,children:e.jsx("div",{className:r.text,children:"teamsHighContrastTheme"})})})]})};a.__docgenInfo={description:"",methods:[],displayName:"Default"};const p=`import { makeStyles } from "@griffel/react";
 import {
   HarmonyProvider,
   tokens,
@@ -60,7 +60,7 @@ export const Default = () => {
     </>
   );
 };
-`,a=t({example:{backgroundColor:s.colorBrandBackground2,color:s.colorBrandForeground2,border:`5px solid ${s.colorBrandStroke1}`,borderRadius:"5px",margin:"5px"},text:{padding:"5px",fontSize:"18px"}}),i=()=>{const r=a();return e.jsx(n,{children:e.jsxs("div",{className:r.example,children:[e.jsx("div",{className:r.text,children:"Web Light Theme using brand tokens"}),e.jsx(n,{theme:{colorBrandStroke1:"red",colorBrandBackground2:"green",colorBrandForeground2:"yellow"},children:e.jsx(o,{})}),e.jsx(o,{})]})})};function o(){const r=a();return e.jsx("div",{className:r.example,children:e.jsx("div",{className:r.text,children:"Child Nested FishProvider with partial theme"})})}i.__docgenInfo={description:"",methods:[],displayName:"Nested"};const y=`import { makeStyles } from "@griffel/react";\r
+`,y=`import { makeStyles } from "@griffel/react";\r
 import { tokens, HarmonyProvider } from "harmony-ui";\r
 \r
 const useStyles = makeStyles({\r
@@ -77,7 +77,7 @@ const useStyles = makeStyles({\r
   },\r
 });\r
 \r
-export const Nested = () => {\r
+export const Nesting = () => {\r
   const styles = useStyles();\r
   return (\r
     <HarmonyProvider>\r
@@ -109,4 +109,4 @@ function Child() {\r
     </div>\r
   );\r
 }\r
-`,N={title:"组件/HarmonyProvider",component:n};d.parameters={docs:{source:{code:p}}};i.parameters={docs:{description:{story:"HarmonyProvider可以嵌套使用。"}},source:{code:y}};const b=["Default","Nested"];export{d as Default,i as Nested,b as __namedExportsOrder,N as default};
+`,d=t({example:{backgroundColor:s.colorBrandBackground2,color:s.colorBrandForeground2,border:`5px solid ${s.colorBrandStroke1}`,borderRadius:"5px",margin:"5px"},text:{padding:"5px",fontSize:"18px"}}),i=()=>{const r=d();return e.jsx(n,{children:e.jsxs("div",{className:r.example,children:[e.jsx("div",{className:r.text,children:"Web Light Theme using brand tokens"}),e.jsx(n,{theme:{colorBrandStroke1:"red",colorBrandBackground2:"green",colorBrandForeground2:"yellow"},children:e.jsx(o,{})}),e.jsx(o,{})]})})};function o(){const r=d();return e.jsx("div",{className:r.example,children:e.jsx("div",{className:r.text,children:"Child Nested FishProvider with partial theme"})})}i.__docgenInfo={description:"",methods:[],displayName:"Nesting"};const N={title:"组件/HarmonyProvider",component:n};a.parameters={docs:{source:{code:p}}};i.parameters={docs:{description:{story:"HarmonyProvider可以嵌套使用。"}},source:{code:y}};const b=["Default","Nesting"];export{a as Default,i as Nesting,b as __namedExportsOrder,N as default};

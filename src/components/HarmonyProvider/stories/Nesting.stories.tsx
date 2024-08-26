@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export const Nested = () => {
+export const Nesting = () => {
   const styles = useStyles();
   return (
     <HarmonyProvider>

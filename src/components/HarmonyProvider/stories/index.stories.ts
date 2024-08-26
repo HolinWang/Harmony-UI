@@ -3,9 +3,9 @@ import { HarmonyProvider } from "harmony-ui";
 import { Default } from "./Default.stories";
 // @ts-expect-error - required for ts
 import DefaultSource from "./Default.stories?raw";
-import { Nested } from "./Nested.stories";
 // @ts-expect-error - required for ts
-import NestedSource from "./Nested.stories?raw";
+import NestingSource from "./Nesting.stories?raw";
+import { Nesting } from "./Nesting.stories";
 const meta = {
   title: "组件/HarmonyProvider",
   component: HarmonyProvider,
@@ -22,16 +22,16 @@ export default meta;
   },
 };
 
-(Nested as any).parameters = {
+( Nesting as any).parameters = {
   docs: {
     description: {
       story: "HarmonyProvider可以嵌套使用。",
     },
   },
   source: {
-    code: NestedSource,
+    code: NestingSource,
   },
 };
 
 
-export { Default,Nested };
+export { Default, Nesting };
